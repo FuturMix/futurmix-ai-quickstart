@@ -121,10 +121,39 @@ Full list: [futurmix.ai/models](https://futurmix.ai/models)
 ## Examples in this repo
 
 - [`examples/basic_chat.py`](examples/basic_chat.py) — Simple chat completion
-- [`examples/multi_model.py`](examples/multi_model.py) — Call multiple models and compare
-- [`examples/failover_demo.py`](examples/failover_demo.py) — Manual failover pattern
+- [`examples/multi_model.py`](examples/multi_model.py) — Call multiple models and compare latency/cost
+- [`examples/failover_demo.py`](examples/failover_demo.py) — Manual failover pattern (gpt-4o → claude → gemini)
 - [`examples/streaming.py`](examples/streaming.py) — Streaming responses
+- [`examples/model_routing.py`](examples/model_routing.py) — Route by task type (code, writing, classification)
 - [`examples/image_generation.py`](examples/image_generation.py) — Image generation with gpt-image-1
+
+---
+
+## Framework compatibility
+
+FuturMix works with any OpenAI-compatible library. Change one config value — nothing else.
+
+**LangChain:**
+```python
+from langchain_openai import ChatOpenAI
+
+llm = ChatOpenAI(
+    api_key="YOUR_API_KEY",
+    base_url="https://futurmix.ai/v1",
+    model="gpt-4o",
+)
+```
+
+**LlamaIndex:**
+```python
+from llama_index.llms.openai import OpenAI
+
+llm = OpenAI(
+    api_key="YOUR_API_KEY",
+    api_base="https://futurmix.ai/v1",
+    model="gpt-4o",
+)
+```
 
 ---
 
