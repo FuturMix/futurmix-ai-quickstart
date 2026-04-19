@@ -6,7 +6,7 @@ FuturMix is a unified AI gateway that gives every team — from solo developers 
 
 **Why teams choose FuturMix over calling providers directly (or using OpenRouter):**
 
-- **21 models, one API key** — GPT-5.4, Claude Opus 4.6, Gemini 3.1 Pro, Seedance 2.0, and more
+- **22 models, one API key** — GPT-5.4, Claude Opus 4.7, Gemini 3.1 Pro, Seedance 2.0, and more
 - **20-30% lower cost** than OpenRouter, with transparent per-model pricing
 - **99.99% SLA** with automatic failover — if one provider goes down, your app doesn't
 - **Zero data retention** — we never log, store, or train on your prompts
@@ -14,7 +14,7 @@ FuturMix is a unified AI gateway that gives every team — from solo developers 
 
 **Base URL:** `https://futurmix.ai/v1`
 
-[![Models](https://img.shields.io/badge/models-21-blue)](https://futurmix.ai/models)
+[![Models](https://img.shields.io/badge/models-22-blue)](https://futurmix.ai/models)
 [![SLA](https://img.shields.io/badge/SLA-99.99%25-green)](https://futurmix.ai)
 [![OpenAI Compatible](https://img.shields.io/badge/OpenAI-compatible-orange)](https://futurmix.ai)
 
@@ -127,7 +127,7 @@ All existing OpenAI SDK code works unchanged.
 | Provider | Models | Pricing (per 1M tokens) |
 |----------|--------|------------------------|
 | **OpenAI** | GPT-5.4, GPT-5.4 Mini, GPT-5.4 Nano | From $0.20 / $1.25 |
-| **Anthropic** | Claude Opus 4.6, Sonnet 4.6, Sonnet 4.5, Haiku 4.5 | From $1.00 / $5.00 |
+| **Anthropic** | Claude Opus 4.7, Opus 4.6, Sonnet 4.6, Sonnet 4.5, Haiku 4.5 | From $1.00 / $5.00 |
 | **Google** | Gemini 3.1 Pro, Gemini 2.5 Pro, Gemini 2.5 Flash | From $0.10 / $0.40 |
 | **ByteDance** | Seedance 2.0 (Video) | $3.00 / generation |
 
