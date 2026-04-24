@@ -137,7 +137,7 @@ All existing OpenAI SDK code works unchanged.
 
 ## Use with Your Favorite Tools
 
-FuturMix works with any OpenAI-compatible tool or framework. Change one config value — nothing else.
+FuturMix works with any OpenAI-compatible tool or framework. It also supports the Anthropic Messages API format natively. Change one config value — nothing else.
 
 ### Cursor / Windsurf
 
@@ -150,9 +150,52 @@ FuturMix works with any OpenAI-compatible tool or framework. Change one config v
 }
 ```
 
+### Claude Desktop (Cowork)
+
+FuturMix supports the Anthropic `/v1/messages` format natively, so you can use it as a third-party inference provider in Claude Desktop:
+
+1. Open Claude Desktop → Help → Troubleshooting → **Enable Developer Mode**
+2. Go to Developer → **Configure third-party inference**
+3. Set:
+   - **Base URL:** `https://futurmix.ai`
+   - **API Key:** Your FuturMix API key
+4. Select a Claude model and start chatting
+
+> **Note:** Use `https://futurmix.ai` (without `/v1`) as the base URL — Claude Desktop appends `/v1` automatically. Authentication uses Bearer token format.
+
 ### Cline (VS Code)
 
-Set your API base to `https://futurmix.ai/v1` in Cline settings.
+Set your API base to `https://futurmix.ai/v1` in Cline settings. Choose "OpenAI Compatible" as the provider, enter your FuturMix API key, and select any model.
+
+### Roo Code (VS Code)
+
+Same as Cline — set provider to "OpenAI Compatible", base URL to `https://futurmix.ai/v1`, and enter your API key.
+
+### Aider
+
+```bash
+export OPENAI_API_KEY="YOUR_FUTURMIX_KEY"
+export OPENAI_API_BASE="https://futurmix.ai/v1"
+aider --model openai/claude-sonnet-4-6
+```
+
+### Anthropic SDK (Python)
+
+```python
+import anthropic
+
+client = anthropic.Anthropic(
+    api_key="YOUR_FUTURMIX_KEY",
+    base_url="https://futurmix.ai/v1"
+)
+
+message = client.messages.create(
+    model="claude-sonnet-4-6",
+    max_tokens=1024,
+    messages=[{"role": "user", "content": "Hello!"}]
+)
+print(message.content[0].text)
+```
 
 ### LangChain
 
