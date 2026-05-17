@@ -8,7 +8,7 @@ Code examples for accessing 22+ AI models through one OpenAI-compatible API.
 pip install openai
 ```
 
-Get your API key at [futurmix.ai](https://futurmix.ai)
+Get your API key at [futurmix.ai](https://futurmix.ai?utm_source=github&utm_medium=repo&utm_campaign=quickstart)
 
 ## Python
 
@@ -71,7 +71,7 @@ curl https://futurmix.ai/v1/chat/completions \
 | **Google** | Gemini 3.1 Pro, 3 Flash | 20% off |
 | **DeepSeek** | DeepSeek V3, R1 | 30% off |
 
-Full model list: [futurmix.ai/pricing](https://futurmix.ai/pricing)
+Full model list: [futurmix.ai/pricing](https://futurmix.ai/pricing?utm_source=github&utm_medium=repo&utm_campaign=quickstart)
 
 ## Streaming
 
@@ -135,6 +135,6 @@ FuturMix works with any OpenAI-compatible tool:
 
 ## Links
 
-- Website: [futurmix.ai](https://futurmix.ai)
-- Pricing: [futurmix.ai/pricing](https://futurmix.ai/pricing)
+- Website: [futurmix.ai](https://futurmix.ai?utm_source=github&utm_medium=repo&utm_campaign=quickstart)
+- Pricing: [futurmix.ai/pricing](https://futurmix.ai/pricing?utm_source=github&utm_medium=repo&utm_campaign=quickstart)
 - Multi-Model Guide: [enterprise-ai-agent-guide](https://github.com/FuturMix/enterprise-ai-agent-guide)
