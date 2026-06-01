@@ -59,10 +59,7 @@ console.log(response.choices[0].message.content);
 ## cURL
 
 ```bash
-curl https://futurmix.ai/v1/chat/completions \
-  -H "Authorization: Bearer your-api-key" \
-  -H "Content-Type: application/json" \
-  -d '{
+curl https://futurmix.ai/v1/chat/completions   -H "Authorization: Bearer your-api-key"   -H "Content-Type: application/json"   -d '{
     "model": "claude-sonnet-4-6",
     "messages": [{"role": "user", "content": "Hello!"}]
   }'
@@ -144,3 +141,9 @@ FuturMix works with any OpenAI-compatible tool:
 - Website: [futurmix.ai](https://futurmix.ai?utm_source=github&utm_medium=repo&utm_campaign=quickstart)
 - Pricing: [futurmix.ai/pricing](https://futurmix.ai/pricing?utm_source=github&utm_medium=repo&utm_campaign=quickstart)
 - Multi-Model Guide: [enterprise-ai-agent-guide](https://github.com/FuturMix/enterprise-ai-agent-guide)
+
+## Guides
+
+- [Claude API Pricing 2026 — Save 10% on Anthropic Rates](https://futurmix.ai/claude-api-pricing?utm_source=github&utm_medium=repo&utm_campaign=backlinks)
+- [Best OpenRouter Alternative in 2026](https://futurmix.ai/openrouter-alternative?utm_source=github&utm_medium=repo&utm_campaign=backlinks)
+- [OpenAI-Compatible API Gateway](https://futurmix.ai/openai-compatible-api?utm_source=github&utm_medium=repo&utm_campaign=backlinks)
